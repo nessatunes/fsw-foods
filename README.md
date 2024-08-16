@@ -35,4 +35,9 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+
+### Projeto FSW-Food realizado na [Full Stack Week](https://lp.fullstackclub.com.br/) com [Felipe Rocha](https://www.youtube.com/@dicasparadevs)
+
+Projeto de sistema de Delivery, login com Google
+
 ![Diagrama](public/diagrama.png)
