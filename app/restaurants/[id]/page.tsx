@@ -67,7 +67,7 @@ const RestaurantPage = async ({ params: { id } }: RestaurantPageProps) => {
   return (
     <div>
       <RestaurantImage
-        restaurant={restaurant}
+        restaurant={JSON.parse(JSON.stringify(restaurant))}
         userFavoriteRestaurants={userFavoriteRestaurants}
       />
 
@@ -93,7 +93,7 @@ const RestaurantPage = async ({ params: { id } }: RestaurantPageProps) => {
       </div>
 
       <div className="px-5">
-        <DeliveryInfo restaurant={restaurant} />
+        <DeliveryInfo restaurant={JSON.parse(JSON.stringify(restaurant))}/>
       </div>
 
       <div className="mt-3 flex gap-4 overflow-x-scroll px-5 [&::-webkit-scrollbar]:hidden">
@@ -123,7 +123,7 @@ const RestaurantPage = async ({ params: { id } }: RestaurantPageProps) => {
         </div>
       ))}
 
-      <CartBanner restaurant={restaurant} />
+      <CartBanner restaurant={JSON.parse(JSON.stringify(restaurant))} />
     </div>
   );
 };
